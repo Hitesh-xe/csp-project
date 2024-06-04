@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 0 3rem;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  background-color: rgba(40, 180, 133, 0.8);
+  border-radius: 2rem;
+  margin-top: 1rem;
+  font-family: sans-serif;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+ul li {
+  list-style: none;
+  margin: 0 1.5rem;
+}
+a {
+  padding: 0.6rem 1.5rem;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  transition: all 0.3s ease-in;
+}
+a:hover,
+.active {
+  background-color: white;
+  color: rgba(40, 180, 133, 0.8);
+  border-radius: 1rem;
+}
+.logo {
+  height: 3rem;
+  margin-left: 1rem;
+  background-color: white;
+  border-radius: 50%;
+  padding: 0.3rem;
+}
+.section1 {
+  height: 90vh;
+  /* background-image: linear-gradient(
+    to right bottom,
+    rgba(85, 197, 122, 0.362),
+    rgba(40, 180, 133, 0.382)
+  ); */
+}
+.main {
+  display: flex;
+  align-items: center;
+}
+.label {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  color: white;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(-80px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+/* 
+.visible {
+  transform: translateX(0px);
+  opacity: 1;
+} */
+.container {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+  height: 100%;
+}
+.heading {
+  width: 50%;
+  text-transform: capitalize;
+  font-size: 3.3rem;
+  padding: 1.5rem 1.5rem;
+  margin-top: -5rem;
+  margin-left: 2rem;
+  letter-spacing: 5px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  animation: slide 1s ease-in-out;
+}
+.icon {
+  font-size: 2rem;
+}
+.btn:hover,
+.btn-2:hover {
+  background-color: rgb(40, 180, 133, 0.8);
+  color: white;
+}
+.btn {
+  outline: none;
+  background-color: inherit;
+  border-bottom: 1px solid rgb(40, 180, 133, 0.8);
+  color: rgb(40, 180, 133, 0.8);
+  padding: 0.7rem 1rem;
+  position: relative;
+  top: 5rem;
+  left: 0rem;
+  font-size: 1.3rem;
+  transition: all 0.3s ease-in;
+}
+
+.image {
+  background-color: inherit;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  height: 30rem;
+}
+
+/******************-----------------------SECTION 2------------------------------------*****************/
+.section2 {
+  height: auto;
+  padding-bottom: 2rem;
+  background-color: rgb(245, 245, 245);
+}
+.head--sec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+}
+h1 {
+  color: rgba(40, 180, 133);
+  letter-spacing: 3px;
+  font-family: sans-serif;
+}
+.viewall {
+  background-color: rgba(40, 180, 133);
+  letter-spacing: 3px;
+  font-family: sans-serif;
+  border-radius: 3rem;
+  padding: 1rem 1rem;
+}
+.viewall:hover {
+  background-color: rgb(245, 245, 245);
+  border: 1px solid rgba(40, 180, 133);
+}
+.sec2-img {
+  width: 25rem;
+  height: 25rem;
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  shape-outside: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+}
+.img-sleep {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.3);
+  transition: all 0.5s;
+}
+.health-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 4rem;
+}
+.details-1 {
+  width: 50%;
+  color: #707070;
+  font-size: 1.4rem;
+}
+
+.health-2 {
+  display: flex;
+}
+.btn-2 {
+  outline: none;
+  background-color: inherit;
+  border-bottom: 1px solid rgb(40, 180, 133, 0.8);
+  color: rgb(40, 180, 133, 0.8);
+  padding: 0.7rem 1rem;
+  font-size: 1.3rem;
+  position: relative;
+  top: 2rem;
+  left: 0rem;
+}
+.img-sleep:hover {
+  transform: scale(1);
+}
+.center {
+  text-align: center;
+}
+.margin {
+  margin: 2rem 0;
+}
+/*******************SCROLLER--------------------------------------------*/
+
+/* .scroller {
+  height: auto;
+  width: 93vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem auto;
+  padding: 5rem;
+  position: relative;
+  overflow: hidden;
+} */
+.scroller {
+  height: auto;
+  width: 93vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem auto;
+  padding: 5rem;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.slider {
+  display: flex;
+  animation: 14s scroll infinite linear;
+}
+.scroller-img {
+  height: 7rem;
+  margin: 0 5rem;
+  transform: scale(1);
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.section-about {
+  height: 30rem;
+  background-color: rgb(245, 245, 245);
+  background-image: url(sec3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.blur {
+  height: 30rem;
+  padding: 2rem;
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  display: grid;
+  place-items: center;
+}
+footer {
+  height: 30rem;
+  background-color: #333;
+}
+.about-heading {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 3rem;
+  font-family: sans-serif;
+  color: white;
+  -webkit-text-stroke: 1px rgb(40, 180, 133);
+}
+.btn-abt {
+  font-size: 1.5rem;
+}
+.footer-container {
+  text-align: center;
+  height: 4rem;
+  padding-top: 4rem;
+}
+.footer-img {
+  height: 6rem;
+  background-color: white;
+  border-radius: 50%;
+  padding: 1rem;
+}
+.footer-main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10rem;
+  padding-left: 2rem;
+}
+.footer-links {
+  width: 50%;
+}
+.footer-copyrights {
+  width: 50%;
+}
+.foot-flex {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  margin-left: 2rem;
+  width: 75%;
+  border-top: 1px solid white;
+}
+.margin--1 {
+  list-style: none;
+  margin: 1rem 0.4rem;
+}
+.footer-copyrights {
+  width: 50%;
+  text-align: left;
+  color: white;
+}
+.footer-copyrights p {
+  width: 60%;
+  padding: 0.2rem;
+  margin-left: 7rem;
+  font-size: 1rem;
+  font-family: sans-serif;
+}
